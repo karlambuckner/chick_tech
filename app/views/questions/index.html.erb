@@ -1,5 +1,13 @@
 <h1>Questions</h1>
 
+<h3>Here are some recent questions:</h3>
+<ul>
+  <% @question_most_recent.each do |question| %>
+  <li><%=link_to question.heading, question_path(question) %></li>
+  <% end %>
+</ul>
+
+<h3>All questions:</h3>
 <ul>
   <% @questions.each do |question| %>
     <li><%= link_to question.heading, question_path(question) %></li>

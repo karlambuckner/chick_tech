@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :questions do
     resources :answers
   end
-  
+
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 

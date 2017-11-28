@@ -1,7 +1,10 @@
 class User < ApplicationRecord
   attr_accessor :password
-  validates_confirmation_of :password
-  validates :email, :presence => true, :uniqueness => true
+  validates_confirmation_of :password, :uniqueness => true
+  validates :username, :presence => true, :uniqueness => true
+  validates :password_salt, :presence => true
+  validates :password_hash, :presence => true
+  validates :email, :presence => true
   before_save :encrypt_password
 
   def encrypt_password
