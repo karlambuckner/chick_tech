@@ -1,4 +1,6 @@
 class QuestionsController < ApplicationController
+
+
   def index
     @questions = Question.all
     @question_most_recent = Question.most_recent
@@ -17,6 +19,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
+
     @question = Question.new(question_params)
     if @question.save
       flash[:notice] = "Question successfully added!"
