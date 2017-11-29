@@ -269,6 +269,7 @@
       "/Users/Guest/Desktop/chick_tech/app/controllers/answers_controller.rb": [
         1,
         1,
+        1,
         0,
         0,
         null,
@@ -339,10 +340,6 @@
       "/Users/Guest/Desktop/chick_tech/app/controllers/questions_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        null,
         null,
         1,
         0,
@@ -353,9 +350,16 @@
         1,
         0,
         0,
+        0,
         null,
         null,
         1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
         0,
         0,
         0,
@@ -394,6 +398,8 @@
       ],
       "/Users/Guest/Desktop/chick_tech/app/controllers/sessions_controller.rb": [
         1,
+        null,
+        null,
         1,
         0,
         0,
@@ -481,8 +487,8 @@
         1,
         null,
         1,
-        4,
-        4,
+        2,
+        2,
         null,
         null,
         1,
@@ -517,6 +523,8 @@
         2,
         2,
         2,
+        2,
+        2,
         null,
         null
       ],
@@ -530,10 +538,9 @@
         2,
         2,
         2,
-        2,
         null
       ]
     },
-    "timestamp": 1511911981
+    "timestamp": 1511978562
   }
 }

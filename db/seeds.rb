@@ -1,16 +1,16 @@
 Question.destroy_all
 Answer.destroy_all
 
-50.times do |index|
-  question = Question.create!(heading: Faker::Seinfeld.character,
-                  post: Faker::Seinfeld.quote)
-
+6.times do
+  Question.create!(heading: Faker::Seinfeld.unique.character,
+                  post: Faker::Seinfeld.unique.quote)
+end
 p "Created #{Question.count} questions"
 
- 20.times do |index|
-  answer = Answer.create!(body: Faker::Hipster.paragraph(2, false, 4),
-                          question_id: question.id)
-  end
+10.times do
+  Answer.create!(body: Faker::Hipster.paragraph(2, false, 4),
+                        question_id: Faker::Number.between(Question.first.id, Question.last.id))
+
 end
 
 p "Created #{Answer.count} answers"
